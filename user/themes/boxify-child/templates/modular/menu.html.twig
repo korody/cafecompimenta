@@ -1,0 +1,20 @@
+<section class="menu text-center p-y-xl {{ page.header.section_class }}">
+    <div class="container">
+        <div class="m-b-xl">
+            <h2 class="display-2 text-uppercase">{{ page.header.title }}</h2>
+            <span class="display-4">{{ page.header.subtitle }}</span>
+        </div>
+        <div class="row">
+            {% for item in page.header.food_menu %}
+                <div class="col-md-3 m-b-lg wp2 {% if item.delay %}delay-{{ item.delay }}s{% endif %}">
+                    <div class="menu-item-icon">
+                        <img src="{{ page.find('/images').media[(item.icon)].url }}" class="img-responsive">
+                    </div>
+                    <div class="menu-item-title">
+                        <h3>{{ item.title }}</h3>
+                    </div>
+                </div>
+            {% endfor %} 
+        </div>
+    </div>
+</section>

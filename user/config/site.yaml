@@ -1,0 +1,17 @@
+title: Café com Pimenta
+author:
+  name: Marcos Korody
+metadata:
+    description: 'Para você ter reuniões mais produtivas, com a garantia de alimentos frescos e energéticos, através de um serviço personalizado de coffee breaks.'
+    
+# Header customization
+header:
+  title: "Pause por um instante."
+  buttons:
+    - text: "Use it for Free"
+      link: "http://tympanus.net/codrops/?p=22554"
+      class: "use-btn animated fadeInUp"
+    - text: "Learn More"
+      link: "#about"
+      class: "learn-btn animated fadeInUp"
+      icon: "arrow-down" 

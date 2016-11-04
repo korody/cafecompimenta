@@ -1,0 +1,87 @@
+<?php
+
+/* modular/brand_intro.html.twig */
+class __TwigTemplate_b4612c047d435603f82af83b5a4ea2f30bff475bbbfddd4f1565de256047f8f3 extends Twig_Template
+{
+    public function __construct(Twig_Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->parent = false;
+
+        $this->blocks = array(
+        );
+    }
+
+    protected function doDisplay(array $context, array $blocks = array())
+    {
+        // line 1
+        echo "<section class=\"brand-intro p-y-lg\">
+  ";
+        // line 3
+        echo "  <div class=\"container\">
+    <div class=\"row vertical-align\">
+      <div class=\"col-md-4 col-md-offset-1 ";
+        // line 5
+        echo $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "column_left_css", array());
+        echo "\">
+        <div class=\"wp1\">
+          <img src=\"";
+        // line 7
+        echo $this->getAttribute(twig_first($this->env, $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "media", array()), "images", array())), "url", array());
+        echo "\" class=\"img-responsive\">
+        </div>
+      </div>
+      <div class=\"col-md-6 col-md-offset-1 ";
+        // line 10
+        echo $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "column_right_css", array());
+        echo "\">
+        <h2>";
+        // line 11
+        echo $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "title", array());
+        echo "</h2>
+        <p class=\"lead\">";
+        // line 12
+        echo $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "description", array());
+        echo "</p>
+      </div>
+    </div>
+  </div>
+</section>";
+    }
+
+    public function getTemplateName()
+    {
+        return "modular/brand_intro.html.twig";
+    }
+
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  45 => 12,  41 => 11,  37 => 10,  31 => 7,  26 => 5,  22 => 3,  19 => 1,);
+    }
+
+    public function getSource()
+    {
+        return "<section class=\"brand-intro p-y-lg\">
+  {# <div class=\"texture-overlay\"></div> #}
+  <div class=\"container\">
+    <div class=\"row vertical-align\">
+      <div class=\"col-md-4 col-md-offset-1 {{ page.header.column_left_css }}\">
+        <div class=\"wp1\">
+          <img src=\"{{ page.media.images|first.url }}\" class=\"img-responsive\">
+        </div>
+      </div>
+      <div class=\"col-md-6 col-md-offset-1 {{ page.header.column_right_css }}\">
+        <h2>{{ page.header.title }}</h2>
+        <p class=\"lead\">{{ page.header.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>";
+    }
+}

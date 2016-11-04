@@ -1,0 +1,3 @@
+---
+hidemenu: true
+---

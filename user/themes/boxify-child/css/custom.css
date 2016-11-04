@@ -1,0 +1,199 @@
+
+/* ==========================================================================
+Custom CSS
+========================================================================== */
+
+
+/* ==========================================================================
+Utilities
+========================================================================== */
+
+body {
+    margin: 0;
+    font-family: 'OpenSans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Raleway', serif;
+	color: #4d1f51;
+}
+
+.vertical-align {
+	display: flex;
+	align-items: center;
+}
+
+.img-responsive {
+	margin: 0 auto;
+}
+
+.m-b-md {
+	margin-bottom: 2rem;
+}
+
+.m-b-lg {
+	margin-bottom: 3rem;
+}
+
+.m-b-xl {
+	margin-bottom: 4rem;
+}
+
+.p-a-md {
+	padding: 2rem;
+}
+
+.p-y-md {
+	padding-bottom: 2rem;
+	padding-top: 2rem;
+}
+
+.p-y-lg {
+	padding-bottom: 3rem;
+	padding-top: 3rem;
+}
+
+.p-y-xl {
+	padding-bottom: 4rem;
+	padding-top: 4rem;
+}
+
+.text-uppercase {
+	text-transform: uppercase;
+}
+
+.text-white {
+	color: white;
+}
+
+.bg-faded{
+	background-color: #f6f7f9;
+}
+
+.bg-dark {
+	color: white;
+	background-color: #3f6184;
+}
+
+//.display-1 {
+//  font-size: 6.5rem;
+//  font-weight: 600;
+//}
+
+.display-2 {
+	margin: 0;
+  font-size: 2.2rem;
+  font-weight: 300;
+  letter-spacing: 2.5px;
+  line-height: 1.5;
+}
+
+.display-3 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: .3;
+  letter-spacing: 1.4px;
+}
+
+.display-4 {
+  color: #777;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+
+/* ==========================================================================
+Header
+========================================================================== */
+
+.header-logo {
+	margin-top: -35px;
+	height: 80px;
+	width: 80px;
+}
+
+
+/* ==========================================================================
+Hero
+========================================================================== */
+
+.hero {
+	background: rgb(40, 70, 102) url('/ccp/user/pages/images/fogueira.jpeg') no-repeat center center;
+	background-size: cover;
+}
+
+.hero h1 {
+	font-size: 6.2rem;
+	font-weight: 600;
+  letter-spacing: 2.5px;
+}
+
+
+/* ==========================================================================
+Brand
+========================================================================== */
+
+.section-brand .logo {
+	height: 600px;
+	width: 600px;
+}
+
+
+/* ==========================================================================
+Food-menu
+========================================================================== */
+
+.menu-item-icon {
+	display: inline-block;
+	width: 100px;
+	height: auto;
+//	border: solid 2px #4e9ba3;
+//	border-radius: 50%;
+//	vertical-align: top;
+	text-align: center;
+}
+
+.menu-item-title h3 {
+	font-size: 1.3rem;
+	font-weight: 400;
+	letter-spacing: 1.5px;
+	line-height: 1.5;
+}
+
+
+/* ==========================================================================
+Testimonials slider
+========================================================================== */
+
+.features-slider {
+  padding: 8% 100px;
+}
+
+
+/* ==========================================================================
+Footer
+========================================================================== */
+
+.footer-logo {
+	height: 200px;
+	width: 200px;
+}
+
+footer {
+  padding: 4rem 0;
+}
+
+/* ==========================================================================
+Waypoints
+========================================================================== */
+
+.delay-10s {
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+}
+
+.delay-15s {
+	-webkit-animation-delay: 1.5s;
+	animation-delay: 1.5s;
+}
