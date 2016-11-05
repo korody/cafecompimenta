@@ -1,6 +1,7 @@
 ---
-title: Crie sua própria combinação
-menu: menu completo
+title: Crie sua própria combinação:
+menu: cardápios
+collapsible_class: in
 food_menu:
   - title: chás
     icon: chas.png
@@ -26,6 +27,4 @@ food_menu:
     icon: sanduiches.png
   - title: sucos de frutas
     icon: sucos.png
-  - title: adicione sua opção
-    icon: opcional.png
 ---

@@ -1,3 +1,3 @@
 ---
-hidemenu: true
+menu: empresa
 ---

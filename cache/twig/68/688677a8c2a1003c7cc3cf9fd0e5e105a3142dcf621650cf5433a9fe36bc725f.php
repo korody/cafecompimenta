@@ -17,7 +17,7 @@ class __TwigTemplate_39290a7d85e120ce4740cc7fbe2ef17266b1d2d82753bd64135a474fa97
     {
         // line 1
         echo "<header>
-  <section class=\"hero text-center\">
+  <section class=\"hero\">
     <div class=\"texture-overlay\"></div>
     <div class=\"container\">
       <div class=\"row nav-wrapper\">
@@ -28,10 +28,10 @@ class __TwigTemplate_39290a7d85e120ce4740cc7fbe2ef17266b1d2d82753bd64135a474fa97
         echo "\" alt=\"Café com Pimenta\" class=\"header-logo\"></a>
         </div>
         <div class=\"col-md-6 col-sm-6 col-xs-6 text-right navicon\">
-          <p>MENU</p><a id=\"trigger-overlay\" class=\"nav_slide_button nav-toggle\" href=\"#\"><span></span></a>
+          <a id=\"trigger-overlay\" class=\"nav_slide_button nav-toggle\" href=\"#\"><span></span></a>
         </div>
       </div>
-      <div class=\"row hero-content\">
+      <div class=\"row hero-content text-xs-center\">
         <div class=\"col-md-12\">
           <h1 class=\"display-1 text-white animated fadeIn\">";
         // line 15
@@ -63,7 +63,7 @@ class __TwigTemplate_39290a7d85e120ce4740cc7fbe2ef17266b1d2d82753bd64135a474fa97
     public function getSource()
     {
         return "<header>
-  <section class=\"hero text-center\">
+  <section class=\"hero\">
     <div class=\"texture-overlay\"></div>
     <div class=\"container\">
       <div class=\"row nav-wrapper\">
@@ -71,10 +71,10 @@ class __TwigTemplate_39290a7d85e120ce4740cc7fbe2ef17266b1d2d82753bd64135a474fa97
           <a href=\"#\"><img src=\"{{ page.find('/images').media['cafecompimenta_logo_branco.png'].url }}\" alt=\"Café com Pimenta\" class=\"header-logo\"></a>
         </div>
         <div class=\"col-md-6 col-sm-6 col-xs-6 text-right navicon\">
-          <p>MENU</p><a id=\"trigger-overlay\" class=\"nav_slide_button nav-toggle\" href=\"#\"><span></span></a>
+          <a id=\"trigger-overlay\" class=\"nav_slide_button nav-toggle\" href=\"#\"><span></span></a>
         </div>
       </div>
-      <div class=\"row hero-content\">
+      <div class=\"row hero-content text-xs-center\">
         <div class=\"col-md-12\">
           <h1 class=\"display-1 text-white animated fadeIn\">{{ site.header.title }}</h1>
         </div>

@@ -1,8 +1,8 @@
 ---
 title: <b>MIXED</b>
-subtitle: break
+subtitle: menu
+card_class: bg-cream
 hidemenu: true
-section_class: bg-faded
 food_menu:
   - title: térmica de café e leite
     icon: cafe.png

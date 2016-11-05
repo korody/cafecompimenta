@@ -1,8 +1,8 @@
 ---
 title: <b>FITNESS</b>
-subtitle: break
+subtitle: menu
+card_class: card-inverse bg-purple
 hidemenu: true
-section_class: bg-faded
 food_menu:
   - title: térmica de café e leite
     icon: cafe.png

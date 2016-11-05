@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/ccp/user/config/site.yaml',
-    'modified' => 1478194790,
+    'modified' => 1478350191,
     'data' => [
         'title' => 'Café com Pimenta',
         'author' => [
@@ -12,7 +12,7 @@ return [
             'description' => 'Para você ter reuniões mais produtivas, com a garantia de alimentos frescos e energéticos, através de um serviço personalizado de coffee breaks.'
         ],
         'header' => [
-            'title' => 'Pause por um instante.',
+            'title' => 'pausar.',
             'buttons' => [
                 0 => [
                     'text' => 'Use it for Free',

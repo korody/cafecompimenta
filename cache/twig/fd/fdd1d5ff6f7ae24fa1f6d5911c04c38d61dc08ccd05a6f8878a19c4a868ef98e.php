@@ -119,8 +119,9 @@ class __TwigTemplate_6fe6b08bcedfa46799e958ea8057cfb3225ea17f6954a5dd121cc3ee784
         echo "
 
         <link href=\"https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css\" rel=\"stylesheet\">
-        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=OpenSans:300,400,600,700' rel='stylesheet' type='text/css'>
+        ";
+        // line 27
+        echo "        <link href='https://fonts.googleapis.com/css?family=OpenSans:300,400,600,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Raleway:300,400,600,700' rel='stylesheet' type='text/css'>
 
         <script src=\"";
@@ -254,7 +255,7 @@ class __TwigTemplate_6fe6b08bcedfa46799e958ea8057cfb3225ea17f6954a5dd121cc3ee784
 
     public function getDebugInfo()
     {
-        return array (  242 => 72,  239 => 71,  236 => 70,  233 => 69,  230 => 68,  227 => 67,  224 => 66,  221 => 65,  218 => 64,  215 => 63,  211 => 61,  208 => 60,  205 => 59,  201 => 57,  198 => 56,  195 => 55,  190 => 52,  186 => 53,  183 => 52,  180 => 51,  176 => 49,  173 => 48,  170 => 47,  166 => 22,  163 => 21,  160 => 20,  157 => 19,  154 => 18,  151 => 17,  148 => 16,  145 => 15,  142 => 14,  128 => 30,  117 => 23,  115 => 14,  110 => 12,  107 => 11,  105 => 10,  97 => 9,  94 => 8,  91 => 7,  80 => 73,  78 => 63,  75 => 62,  73 => 59,  70 => 58,  68 => 55,  65 => 54,  63 => 51,  60 => 50,  58 => 47,  49 => 40,  47 => 7,  42 => 5,  38 => 4,  34 => 3,  30 => 2,  27 => 1,);
+        return array (  243 => 72,  240 => 71,  237 => 70,  234 => 69,  231 => 68,  228 => 67,  225 => 66,  222 => 65,  219 => 64,  216 => 63,  212 => 61,  209 => 60,  206 => 59,  202 => 57,  199 => 56,  196 => 55,  191 => 52,  187 => 53,  184 => 52,  181 => 51,  177 => 49,  174 => 48,  171 => 47,  167 => 22,  164 => 21,  161 => 20,  158 => 19,  155 => 18,  152 => 17,  149 => 16,  146 => 15,  143 => 14,  129 => 30,  124 => 27,  117 => 23,  115 => 14,  110 => 12,  107 => 11,  105 => 10,  97 => 9,  94 => 8,  91 => 7,  80 => 73,  78 => 63,  75 => 62,  73 => 59,  70 => 58,  68 => 55,  65 => 54,  63 => 51,  60 => 50,  58 => 47,  49 => 40,  47 => 7,  42 => 5,  38 => 4,  34 => 3,  30 => 2,  27 => 1,);
     }
 
     public function getSource()
@@ -284,7 +285,7 @@ class __TwigTemplate_6fe6b08bcedfa46799e958ea8057cfb3225ea17f6954a5dd121cc3ee784
         {{ assets.css() }}
 
         <link href=\"https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css\" rel=\"stylesheet\">
-        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+        {# <link href='https://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'> #}
         <link href='https://fonts.googleapis.com/css?family=OpenSans:300,400,600,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Raleway:300,400,600,700' rel='stylesheet' type='text/css'>
 

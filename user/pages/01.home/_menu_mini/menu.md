@@ -1,6 +1,6 @@
 ---
 title: <b>MINI</b>
-subtitle: break
+subtitle: menu
 hidemenu: true
 food_menu:
   - title: térmica de café e leite

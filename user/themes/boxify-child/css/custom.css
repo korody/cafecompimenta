@@ -18,30 +18,39 @@ h1, h2, h3, h4, h5, h6 {
 	color: #4d1f51;
 }
 
-.vertical-align {
-	display: flex;
-	align-items: center;
-}
+//.vertical-align {
+//	display: flex;
+//	align-items: center;
+//}
 
-.img-responsive {
-	margin: 0 auto;
-}
+//.img-responsive {
+//	margin: 0 auto;
+//}
 
-.m-b-md {
-	margin-bottom: 2rem;
-}
+//.m-b-md {
+//	margin-bottom: 2rem;
+//}
 
-.m-b-lg {
-	margin-bottom: 3rem;
-}
+//.m-b-lg {
+//	margin-bottom: 3rem;
+//}
 
 .m-b-xl {
 	margin-bottom: 4rem;
 }
 
-.p-a-md {
-	padding: 2rem;
+.m-b-0 {
+	margin-bottom: 0;
 }
+
+.m-y-0 {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+//.m-t-xl {
+//	margin-top: 4rem;
+//}
 
 .p-y-md {
 	padding-bottom: 2rem;
@@ -58,21 +67,29 @@ h1, h2, h3, h4, h5, h6 {
 	padding-top: 4rem;
 }
 
-.text-uppercase {
-	text-transform: uppercase;
+.p-x-lg {
+	padding-left: 3rem;
+	padding-right: 3rem;
 }
 
-.text-white {
-	color: white;
+.p-b-xxl {
+	padding-bottom: 5rem;
 }
 
-.bg-faded{
-	background-color: #f6f7f9;
+//.p-t-md {
+//	padding-top: 2rem;
+//}
+
+.bg-cream{
+	background-color: #F1E9DC;
 }
 
-.bg-dark {
-	color: white;
-	background-color: #3f6184;
+.bg-red {
+	background-color: #D0867E;
+}
+
+.bg-purple {
+	background-color: #4D1F51;
 }
 
 //.display-1 {
@@ -80,26 +97,30 @@ h1, h2, h3, h4, h5, h6 {
 //  font-weight: 600;
 //}
 
-.display-2 {
-	margin: 0;
-  font-size: 2.2rem;
-  font-weight: 300;
-  letter-spacing: 2.5px;
-  line-height: 1.5;
-}
+//.display-2 {
+//	margin: 0;
+//  font-size: 2rem;
+//  font-weight: 300;
+//  letter-spacing: 2.5px;
+//  line-height: 1.5;
+//}
 
-.display-3 {
+.display-2 {
   font-size: 1.8rem;
   font-weight: 300;
-  line-height: .3;
+  line-height: 1.5;
   letter-spacing: 1.4px;
 }
 
-.display-4 {
-  color: #777;
+.display-3 {
+//  color: #777;
   font-size: 1.2rem;
   font-weight: 300;
   line-height: 1.6;
+}
+
+.text-red {
+	color: #E25152;
 }
 
 
@@ -108,9 +129,9 @@ Header
 ========================================================================== */
 
 .header-logo {
-	margin-top: -35px;
-	height: 80px;
-	width: 80px;
+	margin-top: -40px;
+	height: 70px;
+	width: 70px;
 }
 
 
@@ -119,13 +140,13 @@ Hero
 ========================================================================== */
 
 .hero {
-	background: rgb(40, 70, 102) url('/ccp/user/pages/images/fogueira.jpeg') no-repeat center center;
+	background: rgb(77, 31, 81) url('/ccp/user/pages/images/cafe_fogo.jpeg') no-repeat center center;
 	background-size: cover;
 }
 
 .hero h1 {
-	font-size: 6.2rem;
-	font-weight: 600;
+	font-size: 10rem;
+	font-weight: 400;
   letter-spacing: 2.5px;
 }
 
@@ -137,6 +158,16 @@ Brand
 .section-brand .logo {
 	height: 600px;
 	width: 600px;
+}
+
+.brand-intro-element {
+	height: auto;
+	width: 14rem;
+}
+
+.brand-intro-title {
+	margin: 0 0 0.5rem;
+	font-weight: 600;
 }
 
 
@@ -154,17 +185,40 @@ Food-menu
 	text-align: center;
 }
 
-.menu-item-title h3 {
+.menu-item-title h4 {
 	font-size: 1.3rem;
 	font-weight: 400;
 	letter-spacing: 1.5px;
 	line-height: 1.5;
+	margin: 0.4rem 0;
+}
+
+.menu-collapse {
+  height: 100%; width: 100%;
+  position: absolute;
+  top: 0; left: 0;
+	cursor: crosshair;
+
+}
+
+.menu .card {
+	border-color: transparent;
+}
+
+.menu .card:hover {
+  border-color: rgba(0,0,0,.125);
 }
 
 
+
 /* ==========================================================================
-Testimonials slider
+Clients
 ========================================================================== */
+
+.client-logo {
+	height: auto;
+	width: 15rem;
+}
 
 .features-slider {
   padding: 8% 100px;

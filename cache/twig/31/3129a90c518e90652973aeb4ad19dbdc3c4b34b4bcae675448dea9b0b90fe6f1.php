@@ -16,7 +16,9 @@ class __TwigTemplate_c40d3c6de3a1c83b644ba6a9fd1d7571f7708c5941298f40c42e351ca40
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "<section class=\"section-text text-center p-y-xl ";
+        echo "<section id=\"";
+        echo $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "menu", array());
+        echo "\" class=\"section-text text-xs-center p-y-xl ";
         echo $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "section_class", array());
         echo "\">
     <div class=\"container\">
@@ -43,12 +45,12 @@ class __TwigTemplate_c40d3c6de3a1c83b644ba6a9fd1d7571f7708c5941298f40c42e351ca40
 
     public function getDebugInfo()
     {
-        return array (  25 => 3,  19 => 1,);
+        return array (  27 => 3,  19 => 1,);
     }
 
     public function getSource()
     {
-        return "<section class=\"section-text text-center p-y-xl {{ page.header.section_class }}\">
+        return "<section id=\"{{ page.menu }}\" class=\"section-text text-xs-center p-y-xl {{ page.header.section_class }}\">
     <div class=\"container\">
 \t\t\t<h2 class=\"display-2 {{ page.header.text_class }}\">{{ page.header.text }}</h2>
     </div>

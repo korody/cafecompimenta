@@ -1,6 +1,7 @@
 ---
 title: <b>MEGA</b>
-subtitle: break
+subtitle: menu
+card_class: card-inverse bg-red 
 hidemenu: true
 food_menu:
   - title: máquina de café (com leite, cappuccino, chocolate, chás)

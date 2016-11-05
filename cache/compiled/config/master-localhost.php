@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1478194792,
-    'checksum' => '27feb7e25f30df7e3f1e0d67f0aca2eb',
+    'timestamp' => 1478350191,
+    'checksum' => 'c07dc7fc92cc175f130740d07a442038',
     'files' => [
         'user/config' => [
             'media' => [
@@ -19,7 +19,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1478194790
+                'modified' => 1478350191
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -508,7 +508,7 @@ return [
                 'route' => '/blog'
             ],
             'header' => [
-                'title' => 'Pause por um instante.',
+                'title' => 'pausar.',
                 'buttons' => [
                     0 => [
                         'text' => 'Use it for Free',

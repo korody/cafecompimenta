@@ -17,8 +17,9 @@ content:
             - _menu_mixed
             - _menu_mega
             - _menu_fitness
+            - _clients_intro
+            - _clients
             - _testimonials
-            - _gallery_intro
             - _gallery
             #- _contact
 

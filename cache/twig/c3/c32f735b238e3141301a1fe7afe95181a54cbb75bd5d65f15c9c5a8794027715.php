@@ -16,7 +16,7 @@ class __TwigTemplate_8948846bfb325a13380969f48a762c6638ed3c0f0bc29af790cd47805d7
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "<footer class=\"bg-dark text-center\">
+        echo "<footer class=\"bg-purple text-xs-center\">
     <div class=\"container\">
         <img src=\"";
         // line 3
@@ -44,7 +44,7 @@ class __TwigTemplate_8948846bfb325a13380969f48a762c6638ed3c0f0bc29af790cd47805d7
 
     public function getSource()
     {
-        return "<footer class=\"bg-dark text-center\">
+        return "<footer class=\"bg-purple text-xs-center\">
     <div class=\"container\">
         <img src=\"{{ page.find('/images').media['cafecompimenta_logo_branco.png'].url }}\" class=\"img-responsive footer-logo m-b-md\">
         <p>© Café com Pimenta 2016 - piece of cloud by <a href=\"http://www.aerogami.com/\">AEROGAMI</a></p>

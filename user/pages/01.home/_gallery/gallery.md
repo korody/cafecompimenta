@@ -1,5 +1,5 @@
 ---
-menu: galeria de fotos
+menu: fotos
 screenshots:
   - image: 01-screenshot.jpg
     large_image: 01.jpg
@@ -16,22 +16,6 @@ screenshots:
   - image: 04-screenshot.jpg
     large_image: 04.jpg
     description: Absolutely Free
-    icon: search
-  - image: 05-screenshot.jpg
-    large_image: 05.jpg
-    description: Multi-Purpose Design
-    icon: search
-  - image: 06-screenshot.jpg
-    large_image: 06.jpg
-    description: Exclusive to Codrops
-    icon: search
-  - image: 07-screenshot.jpg
-    large_image: 07.jpg
-    description: Made with Love
-    icon: search
-  - image: 08-screenshot.jpg
-    large_image: 08.jpg
-    description: In Sydney, Australia
     icon: search           
 ---
 

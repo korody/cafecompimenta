@@ -6,7 +6,7 @@ metadata:
     
 # Header customization
 header:
-  title: "Pause por um instante."
+  title: "pausar."
   buttons:
     - text: "Use it for Free"
       link: "http://tympanus.net/codrops/?p=22554"

@@ -16,7 +16,9 @@ class __TwigTemplate_bc62ea0fddb7b2f620e2227ca409dadda8531a011b10dd01b0ae826f031
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "<section class=\"section-brand bg-faded text-center p-y-lg\">
+        echo "<section id=\"";
+        echo $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "menu", array());
+        echo "\" class=\"section-brand bg-cream text-xs-center p-y-lg\">
   <div class=\"container\">
     <img src=\"";
         // line 3
@@ -39,12 +41,12 @@ class __TwigTemplate_bc62ea0fddb7b2f620e2227ca409dadda8531a011b10dd01b0ae826f031
 
     public function getDebugInfo()
     {
-        return array (  23 => 3,  19 => 1,);
+        return array (  25 => 3,  19 => 1,);
     }
 
     public function getSource()
     {
-        return "<section class=\"section-brand bg-faded text-center p-y-lg\">
+        return "<section id=\"{{ page.menu }}\" class=\"section-brand bg-cream text-xs-center p-y-lg\">
   <div class=\"container\">
     <img src=\"{{ page.media.images|first.url }}\" alt=\"Logo Café com Pimenta\" class=\"logo img-responsive\">
   </div>
