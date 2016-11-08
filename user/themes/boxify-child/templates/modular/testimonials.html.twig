@@ -1,0 +1,21 @@
+<section id="{{ page.menu }}" class="testimonials text-xs-center p-y-xl bg-cream">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="testimonials-slider">
+                    <ul class="slides" id="featuresSlider">
+                        {% for testimonial in page.header.testimonials %}
+                            <li>
+                                <img src="{{ page.media[testimonial.avatar].url }}" alt="User Avatar" class="img-circle">
+                                <blockquote>
+                                    <p class="quote display-2 m-b-sm">{{ testimonial.quote }}</p>
+                                    <p class="display-3 text-muted m-b-md">{{ testimonial.author }}</p>
+                                </blockquote>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
