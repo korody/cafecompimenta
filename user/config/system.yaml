@@ -1,5 +1,5 @@
 home:
-  alias: '/embreve'
+  alias: '/home'
 
 pages:
   theme: boxify-child
