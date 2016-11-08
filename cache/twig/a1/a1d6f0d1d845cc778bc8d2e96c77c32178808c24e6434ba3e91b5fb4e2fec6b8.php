@@ -45,7 +45,7 @@ class __TwigTemplate_20fa28e725aaa1fd35fc1abf568539975cb7c063ed664fde8fbc959cbf8
     ";
         // line 7
         $this->displayBlock('head', $context, $blocks);
-        // line 40
+        // line 39
         echo "    </head>
     <body>
         <!--[if lt IE 7]>
@@ -54,29 +54,29 @@ class __TwigTemplate_20fa28e725aaa1fd35fc1abf568539975cb7c063ed664fde8fbc959cbf8
         <!-- open/close -->
 
         ";
-        // line 47
+        // line 46
         $this->displayBlock('header', $context, $blocks);
+        // line 49
+        echo "
+        ";
         // line 50
-        echo "
-        ";
-        // line 51
         $this->displayBlock('body', $context, $blocks);
+        // line 53
+        echo "
+        ";
         // line 54
-        echo "
-        ";
-        // line 55
         $this->displayBlock('footer', $context, $blocks);
+        // line 57
+        echo "
+        ";
         // line 58
-        echo "
-        ";
-        // line 59
         $this->displayBlock('navigation', $context, $blocks);
-        // line 62
+        // line 61
         echo "
         ";
-        // line 63
+        // line 62
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 74
+        // line 73
         echo "        ";
         echo $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "js", array(), "method");
         echo "
@@ -119,13 +119,11 @@ class __TwigTemplate_20fa28e725aaa1fd35fc1abf568539975cb7c063ed664fde8fbc959cbf8
         echo "
 
         <link href=\"https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css\" rel=\"stylesheet\">
-        ";
-        // line 27
-        echo "        <link href='https://fonts.googleapis.com/css?family=OpenSans:300,400,600,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=OpenSans:300,400,600,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Raleway:300,400,600,700' rel='stylesheet' type='text/css'>
 
         <script src=\"";
-        // line 30
+        // line 29
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://js/modernizr.custom.js");
         echo "\"></script>
 
@@ -167,82 +165,82 @@ class __TwigTemplate_20fa28e725aaa1fd35fc1abf568539975cb7c063ed664fde8fbc959cbf8
         echo "        ";
     }
 
-    // line 47
+    // line 46
     public function block_header($context, array $blocks = array())
     {
-        // line 48
+        // line 47
         echo "             ";
-        $this->loadTemplate("partials/header.html.twig", "partials/base.html.twig", 48)->display($context);
-        // line 49
+        $this->loadTemplate("partials/header.html.twig", "partials/base.html.twig", 47)->display($context);
+        // line 48
+        echo "        ";
+    }
+
+    // line 50
+    public function block_body($context, array $blocks = array())
+    {
+        // line 51
+        echo "            ";
+        $this->displayBlock('content', $context, $blocks);
+        // line 52
         echo "        ";
     }
 
     // line 51
-    public function block_body($context, array $blocks = array())
-    {
-        // line 52
-        echo "            ";
-        $this->displayBlock('content', $context, $blocks);
-        // line 53
-        echo "        ";
-    }
-
-    // line 52
     public function block_content($context, array $blocks = array())
     {
     }
 
-    // line 55
+    // line 54
     public function block_footer($context, array $blocks = array())
     {
-        // line 56
+        // line 55
         echo "             ";
-        $this->loadTemplate("partials/footer.html.twig", "partials/base.html.twig", 56)->display($context);
-        // line 57
+        $this->loadTemplate("partials/footer.html.twig", "partials/base.html.twig", 55)->display($context);
+        // line 56
         echo "        ";
     }
 
-    // line 59
+    // line 58
     public function block_navigation($context, array $blocks = array())
     {
-        // line 60
+        // line 59
         echo "           ";
-        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 60)->display($context);
-        // line 61
+        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 59)->display($context);
+        // line 60
         echo "        ";
     }
 
-    // line 63
+    // line 62
     public function block_javascripts($context, array $blocks = array())
     {
-        // line 64
+        // line 63
         echo "            ";
         $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/min/toucheffects-min.js"), "method");
-        // line 65
+        // line 64
         echo "            ";
         $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "add", array(0 => "jquery", 1 => 101), "method");
-        // line 66
+        // line 65
         echo "            ";
         $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/flickity.pkgd.min.js"), "method");
-        // line 67
+        // line 66
         echo "            ";
         $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/jquery.fancybox.pack.js"), "method");
-        // line 68
+        // line 67
         echo "            ";
         $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/retina.js"), "method");
-        // line 69
+        // line 68
         echo "            ";
         $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/waypoints.min.js"), "method");
-        // line 70
+        // line 69
         echo "            ";
         $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/bootstrap.min.js"), "method");
-        // line 71
+        // line 70
         echo "            ";
         $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/min/scripts-min.js"), "method");
-        // line 72
+        // line 71
         echo "            ";
         $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/scripts.js"), "method");
-        // line 73
+        // line 72
         echo "        ";
     }
 
@@ -258,7 +256,7 @@ class __TwigTemplate_20fa28e725aaa1fd35fc1abf568539975cb7c063ed664fde8fbc959cbf8
 
     public function getDebugInfo()
     {
-        return array (  246 => 73,  243 => 72,  240 => 71,  237 => 70,  234 => 69,  231 => 68,  228 => 67,  225 => 66,  222 => 65,  219 => 64,  216 => 63,  212 => 61,  209 => 60,  206 => 59,  202 => 57,  199 => 56,  196 => 55,  191 => 52,  187 => 53,  184 => 52,  181 => 51,  177 => 49,  174 => 48,  171 => 47,  167 => 22,  164 => 21,  161 => 20,  158 => 19,  155 => 18,  152 => 17,  149 => 16,  146 => 15,  143 => 14,  129 => 30,  124 => 27,  117 => 23,  115 => 14,  110 => 12,  107 => 11,  105 => 10,  97 => 9,  94 => 8,  91 => 7,  80 => 74,  78 => 63,  75 => 62,  73 => 59,  70 => 58,  68 => 55,  65 => 54,  63 => 51,  60 => 50,  58 => 47,  49 => 40,  47 => 7,  42 => 5,  38 => 4,  34 => 3,  30 => 2,  27 => 1,);
+        return array (  244 => 72,  241 => 71,  238 => 70,  235 => 69,  232 => 68,  229 => 67,  226 => 66,  223 => 65,  220 => 64,  217 => 63,  214 => 62,  210 => 60,  207 => 59,  204 => 58,  200 => 56,  197 => 55,  194 => 54,  189 => 51,  185 => 52,  182 => 51,  179 => 50,  175 => 48,  172 => 47,  169 => 46,  165 => 22,  162 => 21,  159 => 20,  156 => 19,  153 => 18,  150 => 17,  147 => 16,  144 => 15,  141 => 14,  127 => 29,  117 => 23,  115 => 14,  110 => 12,  107 => 11,  105 => 10,  97 => 9,  94 => 8,  91 => 7,  80 => 73,  78 => 62,  75 => 61,  73 => 58,  70 => 57,  68 => 54,  65 => 53,  63 => 50,  60 => 49,  58 => 46,  49 => 39,  47 => 7,  42 => 5,  38 => 4,  34 => 3,  30 => 2,  27 => 1,);
     }
 
     public function getSource()
@@ -288,7 +286,6 @@ class __TwigTemplate_20fa28e725aaa1fd35fc1abf568539975cb7c063ed664fde8fbc959cbf8
         {{ assets.css() }}
 
         <link href=\"https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css\" rel=\"stylesheet\">
-        {# <link href='https://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'> #}
         <link href='https://fonts.googleapis.com/css?family=OpenSans:300,400,600,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Raleway:300,400,600,700' rel='stylesheet' type='text/css'>
 

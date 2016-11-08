@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/cafecompimenta/user/config/system.yaml',
-    'modified' => 1478616002,
+    'modified' => 1478623923,
     'data' => [
         'home' => [
-            'alias' => '/embreve'
+            'alias' => '/home'
         ],
         'pages' => [
             'theme' => 'boxify-child',

@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1478621677,
-    'checksum' => '41eb195f28a8514e8f6f987141b8105d',
+    'timestamp' => 1478624266,
+    'checksum' => 'e53ac159dedeafc944cc2948c6b9a466',
     'files' => [
         'user/config' => [
             'media' => [
@@ -11,7 +11,7 @@ return [
             ],
             'plugins/email' => [
                 'file' => 'user/config/plugins/email.yaml',
-                'modified' => 1478621677
+                'modified' => 1478624266
             ],
             'plugins/google-maps' => [
                 'file' => 'user/config/plugins/google-maps.yaml',
@@ -35,7 +35,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1478616002
+                'modified' => 1478623923
             ]
         ],
         'system/config' => [
@@ -585,7 +585,7 @@ return [
                 'override_locale' => false
             ],
             'home' => [
-                'alias' => '/embreve',
+                'alias' => '/home',
                 'hide_in_urls' => false
             ],
             'pages' => [
