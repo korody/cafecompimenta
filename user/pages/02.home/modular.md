@@ -1,5 +1,4 @@
 ---
-title: Boxify
 menu: Home
 onpage_menu: true
 content:
