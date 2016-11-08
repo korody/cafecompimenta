@@ -24,7 +24,7 @@ content:
             - _contact
 
 form:
-    name: my-nice-form
+    name: contato
     action: /home
     fields:
         -
@@ -74,8 +74,6 @@ form:
                 dateformat: Ymd-His-u
                 extension: txt
                 body: '{% include ''forms/data.txt.twig'' %}'
-        -
-            message: 'Thank you for your feedback!'
         -
             display: thankyou
 

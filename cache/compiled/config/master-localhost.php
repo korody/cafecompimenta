@@ -1,13 +1,17 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1478616008,
-    'checksum' => 'b9f4838edacec35a86403348e9591682',
+    'timestamp' => 1478621677,
+    'checksum' => '41eb195f28a8514e8f6f987141b8105d',
     'files' => [
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
                 'modified' => 1478171513
+            ],
+            'plugins/email' => [
+                'file' => 'user/config/plugins/email.yaml',
+                'modified' => 1478621677
             ],
             'plugins/google-maps' => [
                 'file' => 'user/config/plugins/google-maps.yaml',
@@ -142,18 +146,18 @@ return [
             ],
             'email' => [
                 'enabled' => true,
-                'from' => NULL,
-                'from_name' => NULL,
-                'to' => NULL,
-                'to_name' => NULL,
+                'from' => 'ko@aerogami.com.br',
+                'from_name' => 'Café com Pimenta website',
+                'to' => 'kalina@kaju.ink',
+                'to_name' => 'Ricardo',
                 'mailer' => [
                     'engine' => 'mail',
                     'smtp' => [
                         'server' => 'localhost',
                         'port' => 25,
                         'encryption' => 'none',
-                        'user' => '',
-                        'password' => ''
+                        'user' => 'ko@aerogami.com.br',
+                        'password' => 'ActAhead#7'
                     ],
                     'sendmail' => [
                         'bin' => '/usr/sbin/sendmail'
