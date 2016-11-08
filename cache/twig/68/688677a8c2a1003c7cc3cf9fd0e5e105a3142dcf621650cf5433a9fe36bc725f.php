@@ -17,9 +17,9 @@ class __TwigTemplate_39290a7d85e120ce4740cc7fbe2ef17266b1d2d82753bd64135a474fa97
     {
         // line 1
         echo "<header>
-  <section class=\"hero\">
+  <section class=\"jumbotron jumbotron-fluid\">
     <div class=\"texture-overlay\"></div>
-    <div class=\"container\">
+    <div class=\"container-fluid\">
       <div class=\"row nav-wrapper\">
         <div class=\"col-md-6 col-sm-6 col-xs-6 text-left\">
           <a href=\"#\"><img src=\"";
@@ -31,16 +31,18 @@ class __TwigTemplate_39290a7d85e120ce4740cc7fbe2ef17266b1d2d82753bd64135a474fa97
           <a id=\"trigger-overlay\" class=\"nav_slide_button nav-toggle\" href=\"#\"><span></span></a>
         </div>
       </div>
-      <div class=\"row hero-content text-xs-center\">
-        <div class=\"col-md-12\">
-          <h1 class=\"display-1 text-white animated fadeIn\">";
+      <div class=\"row m-t-xxl\">
+        <div class=\"col-xs-12 text-xs-center\">
+          <h1 class=\"display-1 text-white wp0\">";
         // line 15
         echo $this->getAttribute($this->getAttribute((isset($context["site"]) ? $context["site"] : null), "header", array()), "title", array());
         echo "</h1>
-        </div>
+          ";
+        // line 17
+        echo "        </div>
       </div>
     </div>
-  </section>
+  </section>  
 </header>
 ";
     }
@@ -57,15 +59,15 @@ class __TwigTemplate_39290a7d85e120ce4740cc7fbe2ef17266b1d2d82753bd64135a474fa97
 
     public function getDebugInfo()
     {
-        return array (  38 => 15,  27 => 7,  19 => 1,);
+        return array (  42 => 17,  38 => 15,  27 => 7,  19 => 1,);
     }
 
     public function getSource()
     {
         return "<header>
-  <section class=\"hero\">
+  <section class=\"jumbotron jumbotron-fluid\">
     <div class=\"texture-overlay\"></div>
-    <div class=\"container\">
+    <div class=\"container-fluid\">
       <div class=\"row nav-wrapper\">
         <div class=\"col-md-6 col-sm-6 col-xs-6 text-left\">
           <a href=\"#\"><img src=\"{{ page.find('/images').media['cafecompimenta_logo_branco.png'].url }}\" alt=\"Café com Pimenta\" class=\"header-logo\"></a>
@@ -74,13 +76,14 @@ class __TwigTemplate_39290a7d85e120ce4740cc7fbe2ef17266b1d2d82753bd64135a474fa97
           <a id=\"trigger-overlay\" class=\"nav_slide_button nav-toggle\" href=\"#\"><span></span></a>
         </div>
       </div>
-      <div class=\"row hero-content text-xs-center\">
-        <div class=\"col-md-12\">
-          <h1 class=\"display-1 text-white animated fadeIn\">{{ site.header.title }}</h1>
+      <div class=\"row m-t-xxl\">
+        <div class=\"col-xs-12 text-xs-center\">
+          <h1 class=\"display-1 text-white wp0\">{{ site.header.title }}</h1>
+          {# <p class=\"lead\">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p> #}
         </div>
       </div>
     </div>
-  </section>
+  </section>  
 </header>
 ";
     }

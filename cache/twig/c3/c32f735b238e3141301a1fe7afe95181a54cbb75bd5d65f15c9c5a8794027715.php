@@ -20,9 +20,9 @@ class __TwigTemplate_8948846bfb325a13380969f48a762c6638ed3c0f0bc29af790cd47805d7
     <div class=\"container\">
         <img src=\"";
         // line 3
-        echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "find", array(0 => "/images"), "method"), "media", array()), "cafecompimenta_logo_branco.png", array(), "array"), "url", array());
-        echo "\" class=\"img-responsive footer-logo m-b-md\">
-        <p>© Café com Pimenta 2016 - piece of cloud by <a href=\"http://www.aerogami.com/\">AEROGAMI</a></p>
+        echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "find", array(0 => "/images"), "method"), "media", array()), "cafecompimenta_logo_branco_reduzido.png", array(), "array"), "url", array());
+        echo "\" class=\"img-responsive footer-logo m-b-sm\">
+        <p>© Café com Pimenta 2016<br>piece of cloud by <a href=\"http://www.aerogami.com/\">AEROGAMI</a></p>
     </div>
 </footer>";
     }
@@ -46,8 +46,8 @@ class __TwigTemplate_8948846bfb325a13380969f48a762c6638ed3c0f0bc29af790cd47805d7
     {
         return "<footer class=\"bg-purple text-xs-center\">
     <div class=\"container\">
-        <img src=\"{{ page.find('/images').media['cafecompimenta_logo_branco.png'].url }}\" class=\"img-responsive footer-logo m-b-md\">
-        <p>© Café com Pimenta 2016 - piece of cloud by <a href=\"http://www.aerogami.com/\">AEROGAMI</a></p>
+        <img src=\"{{ page.find('/images').media['cafecompimenta_logo_branco_reduzido.png'].url }}\" class=\"img-responsive footer-logo m-b-sm\">
+        <p>© Café com Pimenta 2016<br>piece of cloud by <a href=\"http://www.aerogami.com/\">AEROGAMI</a></p>
     </div>
 </footer>";
     }

@@ -1,26 +1,36 @@
 ---
 menu: fotos
 screenshots:
-  - image: 01-screenshot.jpg
+  - image: 01_thumb.jpg
     large_image: 01.jpg
-    description: Optimised For Design
+    description: Nos mínimos detalhes
     icon: search
-  - image: 02-screenshot.jpg
+  - image: 02_thumb.jpg
     large_image: 02.jpg
-    description: User Centric Design
+    description: Alimentos de qualidade
     icon: search
-  - image: 03-screenshot.jpg
+  - image: 03_thumb.jpg
     large_image: 03.jpg
-    description: Responsive and Adaptive
+    description: Para todos os paladares
     icon: search
-  - image: 04-screenshot.jpg
+  - image: 04_thumb.jpg
     large_image: 04.jpg
-    description: Absolutely Free
+    description: Feito com carinho
+    icon: search
+  - image: 05_thumb.jpg
+    large_image: 05.jpg
+    description: Para surpreender
+    icon: search
+  - image: 06_thumb.jpg
+    large_image: 06.jpg
+    description: Para satisfazer a todos
+    icon: search
+  - image: 07_thumb.jpg
+    large_image: 07.jpg
+    description: Porções na medida certa
+    icon: search
+  - image: 08_thumb.jpg
+    large_image: 08.jpg
+    description: Para você saborear
     icon: search           
 ---
-
-# Packed Full of Powerful Features
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-
-<a href="#screenshots" class="arrow-btn">See the screenshots! <i class="fa fa-long-arrow-right"></i></a>

@@ -1,5 +1,5 @@
 ---
-title: Crie sua própria combinação:
+title: crie sua própria combinação:
 menu: cardápios
 collapsible_class: in
 food_menu:
@@ -19,7 +19,7 @@ food_menu:
     icon: castanhas.png
   - title: mini salgados
     icon: salgados.png
-  - title: mini birgadeiros
+  - title: mini brigadeiros
     icon: brigadeiros.png
   - title: mini salada de frutas
     icon: frutas.png

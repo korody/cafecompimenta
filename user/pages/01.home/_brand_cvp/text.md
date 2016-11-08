@@ -3,5 +3,5 @@ text: Para você ter reuniões mais focadas e produtivas,<br> com a garantia de 
 section_class: bg-red text-white
 text_class: text-white
 
-menu: propósito
+hidemenu: true
 ---

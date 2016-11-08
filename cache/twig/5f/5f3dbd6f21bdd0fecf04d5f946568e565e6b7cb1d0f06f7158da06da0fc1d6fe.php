@@ -16,17 +16,28 @@ class __TwigTemplate_b5aaec0941c30c262546308ca5ae03f40583b3879661794756bab9317e8
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "<section class=\"section-form m-y-lg\">
+        echo "<section id=\"";
+        echo $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "menu", array());
+        echo "\" class=\"section-form text-xs-center bg-faded\">
   <div class=\"container\">
-    <div class=\"col-md-8 col-md-offset-2 col-xl-6 col-xl-offset-3\">
-    \t<div class=\"row\">
+  \t<div class=\"row\">
+\t    <div class=\"col-md-8 offset-md-2 col-xl-6 offset-xl-3 wp6 m-b-md\">
         \t";
         // line 5
         $this->loadTemplate("forms/form.html.twig", "modular/form.html.twig", 5)->display($context);
         // line 6
         echo "        </div>
     </div>
+\t\t<p class=\"lead text-muted\">";
+        // line 8
+        echo $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "hint", array());
+        echo "</p>
   </div>
+  <div class=\"m-t-xxl\">
+  ";
+        // line 11
+        echo $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "content", array());
+        echo "
 </section>
 ";
     }
@@ -43,19 +54,22 @@ class __TwigTemplate_b5aaec0941c30c262546308ca5ae03f40583b3879661794756bab9317e8
 
     public function getDebugInfo()
     {
-        return array (  27 => 6,  25 => 5,  19 => 1,);
+        return array (  39 => 11,  33 => 8,  29 => 6,  27 => 5,  19 => 1,);
     }
 
     public function getSource()
     {
-        return "<section class=\"section-form m-y-lg\">
+        return "<section id=\"{{ page.menu }}\" class=\"section-form text-xs-center bg-faded\">
   <div class=\"container\">
-    <div class=\"col-md-8 col-md-offset-2 col-xl-6 col-xl-offset-3\">
-    \t<div class=\"row\">
+  \t<div class=\"row\">
+\t    <div class=\"col-md-8 offset-md-2 col-xl-6 offset-xl-3 wp6 m-b-md\">
         \t{% include \"forms/form.html.twig\" %}
         </div>
     </div>
+\t\t<p class=\"lead text-muted\">{{ page.header.hint }}</p>
   </div>
+  <div class=\"m-t-xxl\">
+  {{ page.content }}
 </section>
 ";
     }

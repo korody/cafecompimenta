@@ -18,7 +18,7 @@ class __TwigTemplate_c40d3c6de3a1c83b644ba6a9fd1d7571f7708c5941298f40c42e351ca40
         // line 1
         echo "<section id=\"";
         echo $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "menu", array());
-        echo "\" class=\"section-text text-xs-center p-y-xl ";
+        echo "\" class=\"section-text text-xs-center p-y-lg ";
         echo $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "section_class", array());
         echo "\">
     <div class=\"container\">
@@ -50,7 +50,7 @@ class __TwigTemplate_c40d3c6de3a1c83b644ba6a9fd1d7571f7708c5941298f40c42e351ca40
 
     public function getSource()
     {
-        return "<section id=\"{{ page.menu }}\" class=\"section-text text-xs-center p-y-xl {{ page.header.section_class }}\">
+        return "<section id=\"{{ page.menu }}\" class=\"section-text text-xs-center p-y-lg {{ page.header.section_class }}\">
     <div class=\"container\">
 \t\t\t<h2 class=\"display-2 {{ page.header.text_class }}\">{{ page.header.text }}</h2>
     </div>

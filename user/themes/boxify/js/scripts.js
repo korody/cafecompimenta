@@ -18,12 +18,7 @@ $(document).ready(function() {
 		offset: '75%'
 	});
 	$('.wp4').waypoint(function() {
-		$('.wp4').addClass('animated fadeInRight');
-	}, {
-		offset: '75%'
-	});
-	$('.wp5').waypoint(function() {
-		$('.wp5').addClass('animated fadeIn');
+		$('.wp4').addClass('animated fadeInDown');
 	}, {
 		offset: '75%'
 	});

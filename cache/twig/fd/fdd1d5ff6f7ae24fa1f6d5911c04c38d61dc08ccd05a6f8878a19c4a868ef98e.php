@@ -76,7 +76,7 @@ class __TwigTemplate_6fe6b08bcedfa46799e958ea8057cfb3225ea17f6954a5dd121cc3ee784
         ";
         // line 63
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 73
+        // line 74
         echo "        ";
         echo $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "js", array(), "method");
         echo "
@@ -240,6 +240,9 @@ class __TwigTemplate_6fe6b08bcedfa46799e958ea8057cfb3225ea17f6954a5dd121cc3ee784
         echo "            ";
         $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/min/scripts-min.js"), "method");
         // line 72
+        echo "            ";
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/scripts.js"), "method");
+        // line 73
         echo "        ";
     }
 
@@ -255,7 +258,7 @@ class __TwigTemplate_6fe6b08bcedfa46799e958ea8057cfb3225ea17f6954a5dd121cc3ee784
 
     public function getDebugInfo()
     {
-        return array (  243 => 72,  240 => 71,  237 => 70,  234 => 69,  231 => 68,  228 => 67,  225 => 66,  222 => 65,  219 => 64,  216 => 63,  212 => 61,  209 => 60,  206 => 59,  202 => 57,  199 => 56,  196 => 55,  191 => 52,  187 => 53,  184 => 52,  181 => 51,  177 => 49,  174 => 48,  171 => 47,  167 => 22,  164 => 21,  161 => 20,  158 => 19,  155 => 18,  152 => 17,  149 => 16,  146 => 15,  143 => 14,  129 => 30,  124 => 27,  117 => 23,  115 => 14,  110 => 12,  107 => 11,  105 => 10,  97 => 9,  94 => 8,  91 => 7,  80 => 73,  78 => 63,  75 => 62,  73 => 59,  70 => 58,  68 => 55,  65 => 54,  63 => 51,  60 => 50,  58 => 47,  49 => 40,  47 => 7,  42 => 5,  38 => 4,  34 => 3,  30 => 2,  27 => 1,);
+        return array (  246 => 73,  243 => 72,  240 => 71,  237 => 70,  234 => 69,  231 => 68,  228 => 67,  225 => 66,  222 => 65,  219 => 64,  216 => 63,  212 => 61,  209 => 60,  206 => 59,  202 => 57,  199 => 56,  196 => 55,  191 => 52,  187 => 53,  184 => 52,  181 => 51,  177 => 49,  174 => 48,  171 => 47,  167 => 22,  164 => 21,  161 => 20,  158 => 19,  155 => 18,  152 => 17,  149 => 16,  146 => 15,  143 => 14,  129 => 30,  124 => 27,  117 => 23,  115 => 14,  110 => 12,  107 => 11,  105 => 10,  97 => 9,  94 => 8,  91 => 7,  80 => 74,  78 => 63,  75 => 62,  73 => 59,  70 => 58,  68 => 55,  65 => 54,  63 => 51,  60 => 50,  58 => 47,  49 => 40,  47 => 7,  42 => 5,  38 => 4,  34 => 3,  30 => 2,  27 => 1,);
     }
 
     public function getSource()
@@ -331,6 +334,7 @@ class __TwigTemplate_6fe6b08bcedfa46799e958ea8057cfb3225ea17f6954a5dd121cc3ee784
             {% do assets.addJs('theme://js/waypoints.min.js') %}
             {% do assets.addJs('theme://js/bootstrap.min.js') %}
             {% do assets.addJs('theme://js/min/scripts-min.js') %}
+            {% do assets.addJs('theme://js/scripts.js') %}
         {% endblock %}
         {{ assets.js() }}
 

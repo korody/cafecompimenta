@@ -1,11 +1,11 @@
 <section id="{{ page.menu }}" class="menu text-xs-center">
     <div class="card card-block p-y-xl m-b-0 {{ page.header.card_class }}">
         <a class="menu-collapse" data-toggle="collapse" data-target="#{{ page.slug }}"></a>
-        <h2 class="card-title display-2 m-y-0 text-uppercase">{{ page.header.title }}</h2>
+        <h2 class="card-title display-2 m-y-0">{{ page.header.title }}</h2>
         <h3 class="card-subtitle display-3">{{ page.header.subtitle }}</h3>
     </div>
 
-    <div class="collapse {{ page.header.collapsible_class }} p-y-md" id="{{ page.slug }}">
+    <div class="collapse {{ page.header.collapsible_class }} p-t-md" id="{{ page.slug }}">
         <div class="container">
             <div class="row flex-items-xs-center">
                 {% for item in page.header.food_menu %}

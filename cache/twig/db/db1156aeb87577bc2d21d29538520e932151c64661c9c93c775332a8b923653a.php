@@ -33,9 +33,7 @@ class __TwigTemplate_7ebeec3e36580e2446f54725029e357a2c21bcefdb95a4f18e366df03e7
           <img src=\"";
             // line 7
             echo $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "media", array()), $this->getAttribute($context["element"], "image", array()), array(), "array"), "url", array());
-            echo "\" class=\"img-responsive brand-intro-element p-y-md ";
-            echo $this->getAttribute($context["element"], "animation", array());
-            echo "\">
+            echo "\" class=\"img-responsive brand-intro-element p-y-md\">
           <h2 class=\"display-2 brand-intro-title ";
             // line 8
             echo $this->getAttribute($context["element"], "brand_intro_title_class", array());
@@ -71,7 +69,7 @@ class __TwigTemplate_7ebeec3e36580e2446f54725029e357a2c21bcefdb95a4f18e366df03e7
 
     public function getDebugInfo()
     {
-        return array (  56 => 12,  47 => 9,  41 => 8,  35 => 7,  32 => 6,  28 => 5,  24 => 3,  19 => 1,);
+        return array (  54 => 12,  45 => 9,  39 => 8,  35 => 7,  32 => 6,  28 => 5,  24 => 3,  19 => 1,);
     }
 
     public function getSource()
@@ -82,7 +80,7 @@ class __TwigTemplate_7ebeec3e36580e2446f54725029e357a2c21bcefdb95a4f18e366df03e7
     <div class=\"row\">
       {% for element in page.header.elements %}
         <div class=\"col-md-6\">
-          <img src=\"{{ page.media[element.image].url }}\" class=\"img-responsive brand-intro-element p-y-md {{ element.animation }}\">
+          <img src=\"{{ page.media[element.image].url }}\" class=\"img-responsive brand-intro-element p-y-md\">
           <h2 class=\"display-2 brand-intro-title {{ element.brand_intro_title_class }}\">{{ element.title }}</h2>
           <p class=\"display-3 m-y-0\">{{ element.description }}</p>
         </div>

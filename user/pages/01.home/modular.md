@@ -21,7 +21,8 @@ content:
             - _clients
             - _testimonials
             - _gallery
-            #- _contact
+            - _contact_intro
+            - _contact
 
 form:
     name: my-nice-form
@@ -32,7 +33,7 @@ form:
             id: name
             label: Name
             classes: 'form-control form-control-lg'
-            placeholder: 'Enter your name'
+            placeholder: 'seu nome'
             autocomplete: 'on'
             type: text
             validate:
@@ -42,7 +43,7 @@ form:
             id: email
             classes: 'form-control form-control-lg'
             label: Email
-            placeholder: 'Enter your email address'
+            placeholder: 'seu e-mail para contato'
             type: text
             validate:
                 rule: email
@@ -52,15 +53,15 @@ form:
             label: Message
             classes: 'form-control form-control-lg'
             size: long
-            placeholder: 'Enter your message'
+            placeholder: 'sua mensagem'
             type: textarea
             validate:
                 required: true
     buttons:
         -
             type: submit
-            value: Submit
-            class: 'btn btn-primary btn-block'
+            value: enviar mensagem
+            class: 'btn btn-outline-primary btn-lg btn-block'
     process:
         -
             email:

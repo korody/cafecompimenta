@@ -4,7 +4,7 @@
     <div class="row">
       {% for element in page.header.elements %}
         <div class="col-md-6">
-          <img src="{{ page.media[element.image].url }}" class="img-responsive brand-intro-element p-y-md {{ element.animation }}">
+          <img src="{{ page.media[element.image].url }}" class="img-responsive brand-intro-element p-y-md">
           <h2 class="display-2 brand-intro-title {{ element.brand_intro_title_class }}">{{ element.title }}</h2>
           <p class="display-3 m-y-0">{{ element.description }}</p>
         </div>

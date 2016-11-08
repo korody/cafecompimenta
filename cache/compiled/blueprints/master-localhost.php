@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1478171513,
-    'checksum' => 'ce33ee3031b1c2d009fa844d57e891bd',
+    'timestamp' => 1478520821,
+    'checksum' => '6a64a98707bedc9bf4121e67c7437e8f',
     'files' => [
         'system/blueprints/config' => [
             'media' => [
@@ -39,6 +39,10 @@ return [
                 'file' => 'user/plugins/form/blueprints.yaml',
                 'modified' => 1478171367
             ],
+            'plugins/google-maps' => [
+                'file' => 'user/plugins/google-maps/blueprints.yaml',
+                'modified' => 1478520559
+            ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/blueprints.yaml',
                 'modified' => 1478171385
@@ -46,6 +50,10 @@ return [
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/blueprints.yaml',
                 'modified' => 1478170738
+            ],
+            'plugins/shortcode-core' => [
+                'file' => 'user/plugins/shortcode-core/blueprints.yaml',
+                'modified' => 1478520553
             ]
         ]
     ],
@@ -2351,6 +2359,34 @@ return [
                 'name' => 'plugins.form.recaptcha.secret_key',
                 'validation' => 'strict'
             ],
+            'plugins.google-maps' => [
+                'form' => [
+                    'validation' => 'strict'
+                ],
+                'type' => '_root',
+                'form_field' => false
+            ],
+            'plugins.google-maps.enabled' => [
+                'type' => 'toggle',
+                'label' => 'Plugin status',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.google-maps.enabled',
+                'validation' => 'strict'
+            ],
+            'plugins.google-maps.google_api_key' => [
+                'type' => 'text',
+                'label' => 'Google Maps API Key',
+                'name' => 'plugins.google-maps.google_api_key',
+                'validation' => 'strict'
+            ],
             'plugins.login' => [
                 'form' => [
                     'validation' => 'loose'
@@ -2703,6 +2739,98 @@ return [
                 ],
                 'name' => 'plugins.problems.built_in_css',
                 'validation' => 'strict'
+            ],
+            'plugins.shortcode-core' => [
+                'form' => [
+                    'validation' => 'strict'
+                ],
+                'type' => '_root',
+                'form_field' => false
+            ],
+            'plugins.shortcode-core.enabled' => [
+                'type' => 'toggle',
+                'label' => 'Plugin Enabled',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.shortcode-core.enabled',
+                'validation' => 'strict'
+            ],
+            'plugins.shortcode-core.active' => [
+                'type' => 'toggle',
+                'label' => 'Activated',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.shortcode-core.active',
+                'validation' => 'strict'
+            ],
+            'plugins.shortcode-core.active_admin' => [
+                'type' => 'toggle',
+                'label' => 'Activated in admin',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.shortcode-core.active_admin',
+                'validation' => 'strict'
+            ],
+            'plugins.shortcode-core.parser' => [
+                'type' => 'select',
+                'size' => 'medium',
+                'classes' => 'fancy',
+                'label' => 'Processor',
+                'options' => [
+                    'wordpress' => 'WordpressParser',
+                    'regex' => 'RegexParser',
+                    'regular' => 'RegularParser'
+                ],
+                'name' => 'plugins.shortcode-core.parser',
+                'validation' => 'strict'
+            ],
+            'plugins.shortcode-core.fontawesome' => [
+                'type' => '_parent',
+                'name' => 'plugins.shortcode-core.fontawesome',
+                'form_field' => false
+            ],
+            'plugins.shortcode-core.fontawesome.load' => [
+                'type' => 'toggle',
+                'label' => 'Load Fontawesome Library',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.shortcode-core.fontawesome.load',
+                'validation' => 'strict'
+            ],
+            'plugins.shortcode-core.fontawesome.url' => [
+                'type' => 'text',
+                'label' => 'Fontawesome URL',
+                'size' => 'large',
+                'name' => 'plugins.shortcode-core.fontawesome.url',
+                'validation' => 'strict'
             ]
         ],
         'rules' => [
@@ -2978,6 +3106,10 @@ return [
                         'secret_key' => 'plugins.form.recaptcha.secret_key'
                     ]
                 ],
+                'google-maps' => [
+                    'enabled' => 'plugins.google-maps.enabled',
+                    'google_api_key' => 'plugins.google-maps.google_api_key'
+                ],
                 'login' => [
                     'tabs' => 'plugins.login.tabs',
                     'login' => 'plugins.login.login',
@@ -3020,6 +3152,16 @@ return [
                 'problems' => [
                     'enabled' => 'plugins.problems.enabled',
                     'built_in_css' => 'plugins.problems.built_in_css'
+                ],
+                'shortcode-core' => [
+                    'enabled' => 'plugins.shortcode-core.enabled',
+                    'active' => 'plugins.shortcode-core.active',
+                    'active_admin' => 'plugins.shortcode-core.active_admin',
+                    'parser' => 'plugins.shortcode-core.parser',
+                    'fontawesome' => [
+                        'load' => 'plugins.shortcode-core.fontawesome.load',
+                        'url' => 'plugins.shortcode-core.fontawesome.url'
+                    ]
                 ]
             ]
         ],

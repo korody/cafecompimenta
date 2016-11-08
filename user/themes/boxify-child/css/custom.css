@@ -3,9 +3,8 @@
 Custom CSS
 ========================================================================== */
 
-
 /* ==========================================================================
-Utilities
+Bootstrap Overrides
 ========================================================================== */
 
 body {
@@ -18,25 +17,37 @@ h1, h2, h3, h4, h5, h6 {
 	color: #4d1f51;
 }
 
-//.vertical-align {
-//	display: flex;
-//	align-items: center;
-//}
+textarea.form-control.form-control-lg {
+	font-size: 1rem;
+}
 
-//.img-responsive {
-//	margin: 0 auto;
-//}
+.form-control.form-control-lg#email {
+	font-size: 1.10rem;
+}
 
-//.m-b-md {
-//	margin-bottom: 2rem;
-//}
+a {
+	color: #D0867E;
+	font-weight: 400;
+}
+
+/* ==========================================================================
+Utilities
+========================================================================== */
+
+.m-b-xl {
+	margin-bottom: 4rem;
+}
 
 //.m-b-lg {
 //	margin-bottom: 3rem;
 //}
 
-.m-b-xl {
-	margin-bottom: 4rem;
+.m-b-md {
+	margin-bottom: 2rem;
+}
+
+.m-b-sm {
+	margin-bottom: 1rem;
 }
 
 .m-b-0 {
@@ -48,9 +59,9 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top: 0;
 }
 
-//.m-t-xl {
-//	margin-top: 4rem;
-//}
+.m-t-xxl {
+	margin-top: 5rem;
+}
 
 .p-y-md {
 	padding-bottom: 2rem;
@@ -72,13 +83,21 @@ h1, h2, h3, h4, h5, h6 {
 	padding-right: 3rem;
 }
 
+.p-b-lg {
+	padding-bottom: 4rem;
+}
+
 .p-b-xxl {
 	padding-bottom: 5rem;
 }
 
-//.p-t-md {
-//	padding-top: 2rem;
-//}
+.p-t-md {
+	padding-top: 2rem;
+}
+
+.p-t-lg {
+	padding-top: 3rem;
+}
 
 .bg-cream{
 	background-color: #F1E9DC;
@@ -92,18 +111,11 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: #4D1F51;
 }
 
-//.display-1 {
-//  font-size: 6.5rem;
-//  font-weight: 600;
-//}
-
-//.display-2 {
-//	margin: 0;
-//  font-size: 2rem;
-//  font-weight: 300;
-//  letter-spacing: 2.5px;
-//  line-height: 1.5;
-//}
+.display-1 {
+	font-size: 5rem;
+	font-weight: 700;
+  letter-spacing: 2.5px;
+}
 
 .display-2 {
   font-size: 1.8rem;
@@ -113,7 +125,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .display-3 {
-//  color: #777;
   font-size: 1.2rem;
   font-weight: 300;
   line-height: 1.6;
@@ -125,13 +136,75 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* ==========================================================================
+Buttons
+========================================================================== */
+
+.btn-outline-primary {
+	border-color: #D0867E;
+	color: #D0867E;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary.focus, .btn-outline-primary:focus,
+.btn-outline-primary.active, .btn-outline-primary:active,
+.open>.btn-outline-primary.dropdown-toggle {
+	color: #fff;
+	background-color: #D0867E;
+	border-color: #D0867E
+}
+
+.btn-outline-primary.active.focus, .btn-outline-primary.active:focus,
+.btn-outline-primary.active:hover,
+.btn-outline-primary:active.focus, .btn-outline-primary:active:focus,
+.btn-outline-primary:active:hover,
+.open>.btn-outline-primary.dropdown-toggle.focus, .open>.btn-outline-primary.dropdown-toggle:focus,
+.open>.btn-outline-primary.dropdown-toggle:hover {
+  color: #fff;
+  background-color: #AA6B66;
+  border-color: #663D3D;
+}
+
+.btn-outline-primary.disabled.focus, .btn-outline-primary.disabled:focus, .btn-outline-primary:disabled.focus, .btn-outline-primary:disabled:focus {
+  border-color: #DDA29E;
+}
+
+.btn-outline-primary.disabled:hover, .btn-outline-primary:disabled:hover {
+	border-color: #DDA29E;
+}
+
+
+/* ==========================================================================
 Header
 ========================================================================== */
 
+.overlay {
+  background: rgba(241, 233, 220, 0.95);
+}
+
 .header-logo {
-	margin-top: -40px;
-	height: 70px;
-	width: 70px;
+	height: 200px;
+	width: 200px;
+}
+
+.nav-toggle {
+  position: absolute;
+  top: 5.5rem;
+  right: 5.5rem;
+  z-index: 999999;
+  cursor: pointer;
+}
+
+/* Menu style */
+.overlay ul li a {
+  border: 2px solid #4D1F51;
+  background-color: transparent;
+  color: #4D1F51;
+  font-weight: 500;
+}
+
+.overlay ul li a:hover, .overlay ul li a:focus {
+  border-color: #4D1F51;
+  color: #4D1F51;
 }
 
 
@@ -139,15 +212,22 @@ Header
 Hero
 ========================================================================== */
 
-.hero {
-	background: rgb(77, 31, 81) url('/ccp/user/pages/images/cafe_fogo.jpeg') no-repeat center center;
+.jumbotron {
+	background: rgb(77, 31, 81) url('/ccp/user/pages/images/pausar.jpg') no-repeat center center;
 	background-size: cover;
+	height: 48rem;
+	margin-bottom: 0;
+	padding: 0;
+	position: relative;
 }
 
-.hero h1 {
-	font-size: 10rem;
-	font-weight: 400;
-  letter-spacing: 2.5px;
+//.jumbotron .container-fluid, .jumbotron .row {
+//	height: 100%;
+//	min-height: 100%;
+//}
+
+.texture-overlay {
+	background-color: rgba(0,0,0,.2)
 }
 
 
@@ -177,7 +257,7 @@ Food-menu
 
 .menu-item-icon {
 	display: inline-block;
-	width: 100px;
+	width: 80px;
 	height: auto;
 //	border: solid 2px #4e9ba3;
 //	border-radius: 50%;
@@ -220,18 +300,44 @@ Clients
 	width: 15rem;
 }
 
-.features-slider {
-  padding: 8% 100px;
+/* ==========================================================================
+Testimonials
+========================================================================== */
+
+.testimonials ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
+.testimonials ul li {
+	width: 100%;
+}
+
+.testimonials .quote {
+	color: #4d1f51;
+}
+
+.testimonials blockquote p.quote:before {
+  content: "\201c";
+}
+
+.testimonials blockquote p.quote:after {
+  content: "\201d";
+  }
+
+.testimonials .flickity-page-dots {
+	position: static;
+	margin-top: 1rem;
+}
 
 /* ==========================================================================
 Footer
 ========================================================================== */
 
 .footer-logo {
-	height: 200px;
-	width: 200px;
+	height: 180px;
+	width: 180px;
 }
 
 footer {

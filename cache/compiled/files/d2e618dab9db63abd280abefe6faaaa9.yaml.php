@@ -2,21 +2,22 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/ccp/user/accounts/korody.yaml',
-    'modified' => 1478171529,
+    'modified' => 1478171580,
     'data' => [
         'email' => 'ko@aerogami.com.br',
-        'fullname' => 'Korody',
-        'title' => 'Administrator',
+        'fullname' => 'Marcos Korody',
+        'title' => 'designer & developer',
         'state' => 'enabled',
         'access' => [
             'admin' => [
-                'login' => true,
-                'super' => true
+                'login' => 'true',
+                'super' => 'true'
             ],
             'site' => [
-                'login' => true
+                'login' => 'true'
             ]
         ],
-        'hashed_password' => '$2y$10$Z2gy1deNJMD9ZZsQfFYOieVdtsgRCYaUPffhikHRS7Lf8msBhRuQO'
+        'hashed_password' => '$2y$10$DJW2f0vjItIz2iU6h9poAOgs3vD9dKp/92lteiCi7Nho4MI7QyT5i',
+        'language' => 'pt'
     ]
 ];

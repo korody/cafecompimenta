@@ -1,13 +1,17 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1478350191,
-    'checksum' => 'c07dc7fc92cc175f130740d07a442038',
+    'timestamp' => 1478570904,
+    'checksum' => 'd3c3c007db803a7193ba4b87dcce62c5',
     'files' => [
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
                 'modified' => 1478171513
+            ],
+            'plugins/google-maps' => [
+                'file' => 'user/config/plugins/google-maps.yaml',
+                'modified' => 1478520745
             ],
             'plugins/simple_form' => [
                 'file' => 'user/config/plugins/simple_form.yaml',
@@ -19,7 +23,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1478350191
+                'modified' => 1478570900
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -65,6 +69,10 @@ return [
                 'file' => 'user/plugins/form/form.yaml',
                 'modified' => 1478171367
             ],
+            'plugins/google-maps' => [
+                'file' => 'user/plugins/google-maps/google-maps.yaml',
+                'modified' => 1478557596
+            ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
                 'modified' => 1478171386
@@ -72,6 +80,10 @@ return [
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
                 'modified' => 1478170738
+            ],
+            'plugins/shortcode-core' => [
+                'file' => 'user/plugins/shortcode-core/shortcode-core.yaml',
+                'modified' => 1478520553
             ]
         ]
     ],
@@ -171,6 +183,10 @@ return [
                     ]
                 ]
             ],
+            'google-maps' => [
+                'enabled' => true,
+                'google_api_key' => 'AIzaSyD7T2QqZqUhN3PEEHvFEE1kS78QEXQUIAo'
+            ],
             'login' => [
                 'enabled' => true,
                 'built_in_css' => true,
@@ -214,6 +230,16 @@ return [
             'problems' => [
                 'enabled' => true,
                 'built_in_css' => true
+            ],
+            'shortcode-core' => [
+                'enabled' => true,
+                'active' => true,
+                'active_admin' => true,
+                'parser' => 'wordpress',
+                'fontawesome' => [
+                    'load' => true,
+                    'url' => '//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css'
+                ]
             ],
             'simple_form' => [
                 'enabled' => true,
@@ -486,7 +512,7 @@ return [
         'site' => [
             'title' => 'Café com Pimenta',
             'author' => [
-                'name' => 'Marcos Korody',
+                'name' => 'AEROGAMI',
                 'email' => 'john@email.com'
             ],
             'taxonomies' => [
@@ -508,20 +534,7 @@ return [
                 'route' => '/blog'
             ],
             'header' => [
-                'title' => 'pausar.',
-                'buttons' => [
-                    0 => [
-                        'text' => 'Use it for Free',
-                        'link' => 'http://tympanus.net/codrops/?p=22554',
-                        'class' => 'use-btn animated fadeInUp'
-                    ],
-                    1 => [
-                        'text' => 'Learn More',
-                        'link' => '#about',
-                        'class' => 'learn-btn animated fadeInUp',
-                        'icon' => 'arrow-down'
-                    ]
-                ]
+                'title' => 'uma pausa para o café.'
             ]
         ],
         'streams' => [

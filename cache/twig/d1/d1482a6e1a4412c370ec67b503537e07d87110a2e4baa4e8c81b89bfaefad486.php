@@ -27,7 +27,7 @@ class __TwigTemplate_9253a21c7a36f31f833036391e8ea54b3e522215e2d679f4581bb7d5495
         // line 3
         echo $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "slug", array());
         echo "\"></a>
-        <h2 class=\"card-title display-2 m-y-0 text-uppercase\">";
+        <h2 class=\"card-title display-2 m-y-0\">";
         // line 4
         echo $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "title", array());
         echo "</h2>
@@ -40,7 +40,7 @@ class __TwigTemplate_9253a21c7a36f31f833036391e8ea54b3e522215e2d679f4581bb7d5495
     <div class=\"collapse ";
         // line 8
         echo $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "collapsible_class", array());
-        echo " p-y-md\" id=\"";
+        echo " p-t-md\" id=\"";
         echo $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "slug", array());
         echo "\">
         <div class=\"container\">
@@ -105,11 +105,11 @@ class __TwigTemplate_9253a21c7a36f31f833036391e8ea54b3e522215e2d679f4581bb7d5495
         return "<section id=\"{{ page.menu }}\" class=\"menu text-xs-center\">
     <div class=\"card card-block p-y-xl m-b-0 {{ page.header.card_class }}\">
         <a class=\"menu-collapse\" data-toggle=\"collapse\" data-target=\"#{{ page.slug }}\"></a>
-        <h2 class=\"card-title display-2 m-y-0 text-uppercase\">{{ page.header.title }}</h2>
+        <h2 class=\"card-title display-2 m-y-0\">{{ page.header.title }}</h2>
         <h3 class=\"card-subtitle display-3\">{{ page.header.subtitle }}</h3>
     </div>
 
-    <div class=\"collapse {{ page.header.collapsible_class }} p-y-md\" id=\"{{ page.slug }}\">
+    <div class=\"collapse {{ page.header.collapsible_class }} p-t-md\" id=\"{{ page.slug }}\">
         <div class=\"container\">
             <div class=\"row flex-items-xs-center\">
                 {% for item in page.header.food_menu %}
