@@ -6,7 +6,7 @@ screenshots:
     description: Nos mínimos detalhes
     icon: search
   - image: 2_thumb.jpg
-    large_image: 2.jpg
+    large_image: 2.JPG
     description: Alimentos de qualidade
     icon: search
   - image: 3_thumb.jpg
