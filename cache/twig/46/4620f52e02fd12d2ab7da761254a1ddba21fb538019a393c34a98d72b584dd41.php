@@ -1,7 +1,7 @@
 <?php
 
 /* modular/image.html.twig */
-class __TwigTemplate_bc62ea0fddb7b2f620e2227ca409dadda8531a011b10dd01b0ae826f0318bd2c extends Twig_Template
+class __TwigTemplate_9fe4b59c2784ae82a206ec4b8190de466c689bb857621304a8794f1393282266 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -23,7 +23,7 @@ class __TwigTemplate_bc62ea0fddb7b2f620e2227ca409dadda8531a011b10dd01b0ae826f031
     <img src=\"";
         // line 3
         echo $this->getAttribute(twig_first($this->env, $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "media", array()), "images", array())), "url", array());
-        echo "\" alt=\"Logo Café com Pimenta\" class=\"logo img-responsive wp6\">
+        echo "\" alt=\"Logo Café com Pimenta\" class=\"logo img-responsive\">
   </div>
 </section>
 ";
@@ -48,7 +48,7 @@ class __TwigTemplate_bc62ea0fddb7b2f620e2227ca409dadda8531a011b10dd01b0ae826f031
     {
         return "<section id=\"{{ page.menu }}\" class=\"section-brand bg-cream text-xs-center p-y-lg\">
   <div class=\"container\">
-    <img src=\"{{ page.media.images|first.url }}\" alt=\"Logo Café com Pimenta\" class=\"logo img-responsive wp6\">
+    <img src=\"{{ page.media.images|first.url }}\" alt=\"Logo Café com Pimenta\" class=\"logo img-responsive\">
   </div>
 </section>
 ";

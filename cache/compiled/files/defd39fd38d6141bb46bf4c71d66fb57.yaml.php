@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/ccp/user/config/system.yaml',
-    'modified' => 1478172691,
+    'modified' => 1478616002,
     'data' => [
         'home' => [
-            'alias' => '/home'
+            'alias' => '/embreve'
         ],
         'pages' => [
             'theme' => 'boxify-child',

@@ -28,6 +28,6 @@ $(document).ready(function() {
 	$('.wp6').waypoint(function() {
 		$('.wp6').addClass('animated fadeInUp');
 	}, {
-		offset: '75%'
+		offset: '50%'
 	});
 });
