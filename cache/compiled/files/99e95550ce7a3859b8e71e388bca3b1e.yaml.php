@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/cafecompimenta/user/config/system.yaml',
-    'modified' => 1478623923,
+    'modified' => 1478727861,
     'data' => [
         'home' => [
             'alias' => '/home'
@@ -37,7 +37,7 @@ return [
             'js_minify' => true
         ],
         'debugger' => [
-            'enabled' => false,
+            'enabled' => true,
             'twig' => true,
             'shutdown' => [
                 'close_connection' => true

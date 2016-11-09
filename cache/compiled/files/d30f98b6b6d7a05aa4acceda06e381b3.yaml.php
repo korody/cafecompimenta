@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/cafecompimenta/user/config/plugins/email.yaml',
-    'modified' => 1478621677,
+    'modified' => 1478624266,
     'data' => [
         'enabled' => true,
         'from' => 'ko@aerogami.com.br',
