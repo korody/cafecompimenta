@@ -12,12 +12,13 @@ class __TwigTemplate_20fa28e725aaa1fd35fc1abf568539975cb7c063ed664fde8fbc959cbf8
         $this->blocks = array(
             'head' => array($this, 'block_head'),
             'stylesheets' => array($this, 'block_stylesheets'),
+            'javascripts' => array($this, 'block_javascripts'),
             'header' => array($this, 'block_header'),
             'body' => array($this, 'block_body'),
             'content' => array($this, 'block_content'),
             'footer' => array($this, 'block_footer'),
             'navigation' => array($this, 'block_navigation'),
-            'javascripts' => array($this, 'block_javascripts'),
+            'bottom' => array($this, 'block_bottom'),
         );
     }
 
@@ -45,7 +46,7 @@ class __TwigTemplate_20fa28e725aaa1fd35fc1abf568539975cb7c063ed664fde8fbc959cbf8
         ";
         // line 7
         $this->displayBlock('head', $context, $blocks);
-        // line 39
+        // line 51
         echo "    </head>
     <body>
         <!--[if lt IE 7]>
@@ -54,33 +55,30 @@ class __TwigTemplate_20fa28e725aaa1fd35fc1abf568539975cb7c063ed664fde8fbc959cbf8
         <!-- open/close -->
 
         ";
-        // line 46
-        $this->displayBlock('header', $context, $blocks);
-        // line 49
-        echo "
-        ";
-        // line 50
-        $this->displayBlock('body', $context, $blocks);
-        // line 53
-        echo "
-        ";
-        // line 54
-        $this->displayBlock('footer', $context, $blocks);
-        // line 57
-        echo "
-        ";
         // line 58
-        $this->displayBlock('navigation', $context, $blocks);
+        $this->displayBlock('header', $context, $blocks);
         // line 61
         echo "
         ";
         // line 62
-        $this->displayBlock('javascripts', $context, $blocks);
-        // line 73
-        echo "        ";
-        echo $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "js", array(), "method");
+        $this->displayBlock('body', $context, $blocks);
+        // line 65
         echo "
-    </body>
+        ";
+        // line 66
+        $this->displayBlock('footer', $context, $blocks);
+        // line 69
+        echo "
+        ";
+        // line 70
+        $this->displayBlock('navigation', $context, $blocks);
+        // line 73
+        echo "
+        ";
+        // line 74
+        $this->displayBlock('bottom', $context, $blocks);
+        // line 77
+        echo "    </body>
 </html>
 ";
     }
@@ -130,6 +128,13 @@ class __TwigTemplate_20fa28e725aaa1fd35fc1abf568539975cb7c063ed664fde8fbc959cbf8
         echo $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "css", array(), "method");
         echo "
 
+            ";
+        // line 37
+        $this->displayBlock('javascripts', $context, $blocks);
+        // line 48
+        echo "            ";
+        echo $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "js", array(), "method");
+        echo "
 
         ";
     }
@@ -164,83 +169,93 @@ class __TwigTemplate_20fa28e725aaa1fd35fc1abf568539975cb7c063ed664fde8fbc959cbf8
         echo "            ";
     }
 
-    // line 46
-    public function block_header($context, array $blocks = array())
+    // line 37
+    public function block_javascripts($context, array $blocks = array())
     {
+        // line 38
+        echo "                ";
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/min/toucheffects-min.js"), "method");
+        // line 39
+        echo "                ";
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "add", array(0 => "jquery", 1 => 101), "method");
+        // line 40
+        echo "                ";
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/flickity.pkgd.min.js"), "method");
+        // line 41
+        echo "                ";
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/jquery.fancybox.pack.js"), "method");
+        // line 42
+        echo "                ";
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/retina.js"), "method");
+        // line 43
+        echo "                ";
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/waypoints.min.js"), "method");
+        // line 44
+        echo "                ";
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/bootstrap.min.js"), "method");
+        // line 45
+        echo "                ";
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/min/scripts-min.js"), "method");
+        // line 46
+        echo "                ";
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/scripts.js"), "method");
         // line 47
-        echo "             ";
-        $this->loadTemplate("partials/header.html.twig", "partials/base.html.twig", 47)->display($context);
-        // line 48
-        echo "        ";
-    }
-
-    // line 50
-    public function block_body($context, array $blocks = array())
-    {
-        // line 51
         echo "            ";
-        $this->displayBlock('content', $context, $blocks);
-        // line 52
-        echo "        ";
-    }
-
-    // line 51
-    public function block_content($context, array $blocks = array())
-    {
-    }
-
-    // line 54
-    public function block_footer($context, array $blocks = array())
-    {
-        // line 55
-        echo "             ";
-        $this->loadTemplate("partials/footer.html.twig", "partials/base.html.twig", 55)->display($context);
-        // line 56
-        echo "        ";
     }
 
     // line 58
-    public function block_navigation($context, array $blocks = array())
+    public function block_header($context, array $blocks = array())
     {
         // line 59
-        echo "           ";
-        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 59)->display($context);
+        echo "             ";
+        $this->loadTemplate("partials/header.html.twig", "partials/base.html.twig", 59)->display($context);
         // line 60
         echo "        ";
     }
 
     // line 62
-    public function block_javascripts($context, array $blocks = array())
+    public function block_body($context, array $blocks = array())
     {
         // line 63
         echo "            ";
-        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/min/toucheffects-min.js"), "method");
+        $this->displayBlock('content', $context, $blocks);
         // line 64
-        echo "            ";
-        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "add", array(0 => "jquery", 1 => 101), "method");
-        // line 65
-        echo "            ";
-        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/flickity.pkgd.min.js"), "method");
-        // line 66
-        echo "            ";
-        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/jquery.fancybox.pack.js"), "method");
+        echo "        ";
+    }
+
+    // line 63
+    public function block_content($context, array $blocks = array())
+    {
+    }
+
+    // line 66
+    public function block_footer($context, array $blocks = array())
+    {
         // line 67
-        echo "            ";
-        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/retina.js"), "method");
+        echo "             ";
+        $this->loadTemplate("partials/footer.html.twig", "partials/base.html.twig", 67)->display($context);
         // line 68
-        echo "            ";
-        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/waypoints.min.js"), "method");
-        // line 69
-        echo "            ";
-        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/bootstrap.min.js"), "method");
-        // line 70
-        echo "            ";
-        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/min/scripts-min.js"), "method");
+        echo "        ";
+    }
+
+    // line 70
+    public function block_navigation($context, array $blocks = array())
+    {
         // line 71
-        echo "            ";
-        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/scripts.js"), "method");
+        echo "           ";
+        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 71)->display($context);
         // line 72
         echo "        ";
+    }
+
+    // line 74
+    public function block_bottom($context, array $blocks = array())
+    {
+        // line 75
+        echo "            ";
+        echo $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "js", array(0 => "bottom"), "method");
+        echo "
+        ";
     }
 
     public function getTemplateName()
@@ -255,7 +270,7 @@ class __TwigTemplate_20fa28e725aaa1fd35fc1abf568539975cb7c063ed664fde8fbc959cbf8
 
     public function getDebugInfo()
     {
-        return array (  243 => 72,  240 => 71,  237 => 70,  234 => 69,  231 => 68,  228 => 67,  225 => 66,  222 => 65,  219 => 64,  216 => 63,  213 => 62,  209 => 60,  206 => 59,  203 => 58,  199 => 56,  196 => 55,  193 => 54,  188 => 51,  184 => 52,  181 => 51,  178 => 50,  174 => 48,  171 => 47,  168 => 46,  164 => 34,  161 => 33,  159 => 32,  156 => 31,  153 => 30,  150 => 29,  147 => 28,  144 => 27,  141 => 26,  138 => 25,  129 => 35,  127 => 25,  116 => 17,  108 => 12,  105 => 11,  103 => 10,  95 => 9,  92 => 8,  89 => 7,  80 => 73,  78 => 62,  75 => 61,  73 => 58,  70 => 57,  68 => 54,  65 => 53,  63 => 50,  60 => 49,  58 => 46,  49 => 39,  47 => 7,  42 => 5,  38 => 4,  34 => 3,  30 => 2,  27 => 1,);
+        return array (  255 => 75,  252 => 74,  248 => 72,  245 => 71,  242 => 70,  238 => 68,  235 => 67,  232 => 66,  227 => 63,  223 => 64,  220 => 63,  217 => 62,  213 => 60,  210 => 59,  207 => 58,  203 => 47,  200 => 46,  197 => 45,  194 => 44,  191 => 43,  188 => 42,  185 => 41,  182 => 40,  179 => 39,  176 => 38,  173 => 37,  169 => 34,  166 => 33,  164 => 32,  161 => 31,  158 => 30,  155 => 29,  152 => 28,  149 => 27,  146 => 26,  143 => 25,  135 => 48,  133 => 37,  127 => 35,  125 => 25,  114 => 17,  106 => 12,  103 => 11,  101 => 10,  93 => 9,  90 => 8,  87 => 7,  81 => 77,  79 => 74,  76 => 73,  74 => 70,  71 => 69,  69 => 66,  66 => 65,  64 => 62,  61 => 61,  59 => 58,  50 => 51,  48 => 7,  43 => 5,  39 => 4,  35 => 3,  31 => 2,  28 => 1,);
     }
 
     public function getSource()
@@ -296,6 +311,18 @@ class __TwigTemplate_20fa28e725aaa1fd35fc1abf568539975cb7c063ed664fde8fbc959cbf8
             {% endblock %}
             {{ assets.css() }}
 
+            {% block javascripts %}
+                {% do assets.addJs('theme://js/min/toucheffects-min.js') %}
+                {% do assets.add('jquery',101) %}
+                {% do assets.addJs('theme://js/flickity.pkgd.min.js') %}
+                {% do assets.addJs('theme://js/jquery.fancybox.pack.js') %}
+                {% do assets.addJs('theme://js/retina.js') %}
+                {% do assets.addJs('theme://js/waypoints.min.js') %}
+                {% do assets.addJs('theme://js/bootstrap.min.js') %}
+                {% do assets.addJs('theme://js/min/scripts-min.js') %}
+                {% do assets.addJs('theme://js/scripts.js') %}
+            {% endblock %}
+            {{ assets.js() }}
 
         {% endblock head%}
     </head>
@@ -321,18 +348,9 @@ class __TwigTemplate_20fa28e725aaa1fd35fc1abf568539975cb7c063ed664fde8fbc959cbf8
            {% include 'partials/navigation.html.twig' %}
         {% endblock %}
 
-        {% block javascripts %}
-            {% do assets.addJs('theme://js/min/toucheffects-min.js') %}
-            {% do assets.add('jquery',101) %}
-            {% do assets.addJs('theme://js/flickity.pkgd.min.js') %}
-            {% do assets.addJs('theme://js/jquery.fancybox.pack.js') %}
-            {% do assets.addJs('theme://js/retina.js') %}
-            {% do assets.addJs('theme://js/waypoints.min.js') %}
-            {% do assets.addJs('theme://js/bootstrap.min.js') %}
-            {% do assets.addJs('theme://js/min/scripts-min.js') %}
-            {% do assets.addJs('theme://js/scripts.js') %}
+        {% block bottom %}
+            {{ assets.js('bottom') }}
         {% endblock %}
-        {{ assets.js() }}
     </body>
 </html>
 ";
