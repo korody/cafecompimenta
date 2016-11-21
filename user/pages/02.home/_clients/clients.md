@@ -1,12 +1,11 @@
 ---
-section_class: bg-faded
 hidemenu: true
 
 clients:
-  - logo: aerogami.png
-  - logo: aerogami.png
-  - logo: aerogami.png
-  - logo: aerogami.png
-  - logo: aerogami.png
-  - logo: aerogami.png
+  - logo: unilever.png
+  - logo: brf.png
+  - logo: brookfield.png
+  - logo: bnp.png
+  - logo: dotz.png
+  - logo: staybridge.png
 ---

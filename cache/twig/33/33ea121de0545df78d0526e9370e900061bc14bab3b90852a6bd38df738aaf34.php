@@ -18,16 +18,16 @@ class __TwigTemplate_a7c921e58252500a63060a3bedd5ecb31ec50d04f69dcce056bed6bf0a6
         // line 1
         echo "<section id=\"";
         echo $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "menu", array());
-        echo "\"  class=\"clients text-xs-center p-b-xxl\">
+        echo "\"  class=\"clients text-xs-center\">
     <div class=\"container-fluid\">
-        <div class=\"row\">
+        <div class=\"row flex-items-xs-middle flex-items-xs-center\">
             ";
         // line 4
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "clients", array()));
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
             // line 5
-            echo "                <div class=\"col-md-2\">
+            echo "                <div class=\"col-sm-6 col-md-4 col-lg-2 p-b-xxl\">
                     <img src=\"";
             // line 6
             echo $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "media", array()), $this->getAttribute($context["item"], "logo", array()), array(), "array"), "url", array());
@@ -62,11 +62,11 @@ class __TwigTemplate_a7c921e58252500a63060a3bedd5ecb31ec50d04f69dcce056bed6bf0a6
 
     public function getSource()
     {
-        return "<section id=\"{{ page.menu }}\"  class=\"clients text-xs-center p-b-xxl\">
+        return "<section id=\"{{ page.menu }}\"  class=\"clients text-xs-center\">
     <div class=\"container-fluid\">
-        <div class=\"row\">
+        <div class=\"row flex-items-xs-middle flex-items-xs-center\">
             {% for item in page.header.clients %}
-                <div class=\"col-md-2\">
+                <div class=\"col-sm-6 col-md-4 col-lg-2 p-b-xxl\">
                     <img src=\"{{ page.media[item.logo].url }}\" class=\"img-fluid client-logo\">
                 </div>
             {% endfor %}

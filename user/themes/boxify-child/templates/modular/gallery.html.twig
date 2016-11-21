@@ -1,25 +1,21 @@
 <section class="screenshots" id="{{ page.menu }}">
   <div class="container-fluid">
-    {% for row in page.header.screenshots|batch(4) %}
-      <div class="row">
-        <ul class="grid">
-          {% for item in row %}
-            <li>
-              <figure>
-                <img src="{{ page.media[item.image].url }}" alt="{{ item.description }}">
-                <figcaption>
-                  <div class="caption-content">
-                    <a href="{{ page.media[item.large_image].url }}" class="single_image">
-                      <i class="fa fa-{{ item.icon }}"></i><br>
-                      <p>{{ item.description }}</p>
-                    </a>
-                  </div>
-                </figcaption>
-              </figure>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-    {% endfor %}
+    <div class="row">
+      {% for item in page.header.screenshots %}
+        <div class="col-sm-6 col-md-3 nopadding">
+          <figure>
+            <img src="{{ page.media[item.image].url }}" alt="{{ item.description }}">
+            <figcaption>
+              <div class="caption-content">
+                <a href="{{ page.media[item.large_image].url }}" class="single_image">
+                  <i class="fa fa-{{ item.icon }}"></i><br>
+                  <p>{{ item.description }}</p>
+                </a>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </section>

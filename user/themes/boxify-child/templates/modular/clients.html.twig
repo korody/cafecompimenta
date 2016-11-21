@@ -1,8 +1,8 @@
-<section id="{{ page.menu }}"  class="clients text-xs-center p-b-xxl">
+<section id="{{ page.menu }}"  class="clients text-xs-center">
     <div class="container-fluid">
-        <div class="row">
+        <div class="row flex-items-xs-middle flex-items-xs-center">
             {% for item in page.header.clients %}
-                <div class="col-md-2">
+                <div class="col-sm-6 col-md-4 col-lg-2 p-b-xxl">
                     <img src="{{ page.media[item.logo].url }}" class="img-fluid client-logo">
                 </div>
             {% endfor %}

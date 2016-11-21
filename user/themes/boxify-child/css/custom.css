@@ -99,12 +99,16 @@ Utilities
 	padding-top: 3rem;
 }
 
+.p-t-xl {
+	padding-top: 4rem;
+}
+
 .bg-cream{
 	background-color: #F1E9DC;
 }
 
 .bg-red {
-	background-color: #D0867E;
+	background-color: #dc6d61;
 }
 
 .bg-purple {
@@ -235,11 +239,6 @@ Hero
 Brand
 ========================================================================== */
 
-.section-brand .logo {
-	height: 600px;
-	width: 600px;
-}
-
 .brand-intro-element {
 	height: auto;
 	width: 14rem;
@@ -290,6 +289,22 @@ Food-menu
 }
 
 
+.menu .card i {
+	color: #000;
+	opacity: .2;
+	-webkit-transition: opacity .3s ease-in-out,padding .3s ease-in-out;
+	-moz-transition: opacity .3s ease-in-out,padding .3s ease-in-out;
+	transition: opacity .3s ease-in-out,padding .3s ease-in-out;
+}
+
+.menu .card-inverse i {
+	color: #FFF;
+	opacity: .3;
+}
+
+.menu .card:hover i {
+	opacity: 1;
+}
 
 /* ==========================================================================
 Clients
@@ -297,7 +312,7 @@ Clients
 
 .client-logo {
 	height: auto;
-	width: 15rem;
+	width: 13rem;
 }
 
 /* ==========================================================================
