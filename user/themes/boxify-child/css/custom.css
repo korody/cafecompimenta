@@ -119,6 +119,7 @@ Utilities
 	font-size: 5rem;
 	font-weight: 700;
   letter-spacing: 2.5px;
+  margin-top: 18rem;
 }
 
 .display-2 {
@@ -186,14 +187,17 @@ Header
 }
 
 .header-logo {
-	height: 200px;
-	width: 200px;
+	height: 70px;
+  position: absolute;
+	left: 20px;
+	top: 20px;
+	width: 70px;
 }
 
 .nav-toggle {
   position: absolute;
-  top: 5.5rem;
-  right: 5.5rem;
+  top: 50px;
+  right: 50px;
   z-index: 999999;
   cursor: pointer;
 }
@@ -217,7 +221,7 @@ Hero
 ========================================================================== */
 
 .jumbotron {
-	background: rgb(77, 31, 81) url('/user/pages/images/pausar.jpg') no-repeat center center;
+	background: rgb(77, 31, 81) url('/cafecompimenta/user/pages/images/pausar.jpg') no-repeat center center;
 	background-size: cover;
 	height: 48rem;
 	margin-bottom: 0;

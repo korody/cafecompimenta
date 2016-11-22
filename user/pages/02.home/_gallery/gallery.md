@@ -10,7 +10,7 @@ screenshots:
     description: Alimentos de qualidade
     icon: search
   - image: 3_thumb.jpg
-    large_image: 3.JPG
+    large_image: 3.jpg
     description: Para todos os paladares
     icon: search
   - image: 4_thumb.jpg
