@@ -7,7 +7,6 @@ logs/*
 images/*
 user/data/*
 user/accounts/*
-user/config/plugins/*
 user/vendor/
 
 # OS Generated
