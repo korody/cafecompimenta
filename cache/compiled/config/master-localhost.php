@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1478729928,
-    'checksum' => 'a22aed925405b061ff7d2aabc4f3b5d5',
+    'timestamp' => 1479949355,
+    'checksum' => '76d173b95c2b3cc24bd4b489f3079d6e',
     'files' => [
         'user/config' => [
             'media' => [
@@ -11,7 +11,7 @@ return [
             ],
             'plugins/email' => [
                 'file' => 'user/config/plugins/email.yaml',
-                'modified' => 1478624266
+                'modified' => 1479949317
             ],
             'plugins/google-maps' => [
                 'file' => 'user/config/plugins/google-maps.yaml',
