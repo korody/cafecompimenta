@@ -1,16 +1,15 @@
 enabled: true
-from: ko@aerogami.com.br
-from_name: 'Café com Pimenta website'
-to: kalina@kaju.ink
+to: ricardo@compimenta.cafe
 to_name: Ricardo
+subject: 'nova mensagem do compimenta.cafe'
 mailer:
-  engine: mail
+  engine: smtp
   smtp:
-    server: localhost
-    port: 25
-    encryption: none
-    user: ko@aerogami.com.br
-    password: 'ActAhead#7'
+    server: mail.name.com
+    port: 465
+    encryption: SSL
+    user: ricardo@compimenta.cafe
+    password: 'ccp2016'
   sendmail:
     bin: /usr/sbin/sendmail
 content_type: text/html
