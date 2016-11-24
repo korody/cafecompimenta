@@ -38,10 +38,6 @@ Utilities
 	margin-bottom: 4rem;
 }
 
-//.m-b-lg {
-//	margin-bottom: 3rem;
-//}
-
 .m-b-md {
 	margin-bottom: 2rem;
 }
@@ -229,11 +225,6 @@ Hero
 	position: relative;
 }
 
-//.jumbotron .container-fluid, .jumbotron .row {
-//	height: 100%;
-//	min-height: 100%;
-//}
-
 .texture-overlay {
 	background-color: rgba(0,0,0,.2)
 }
@@ -262,9 +253,6 @@ Food-menu
 	display: inline-block;
 	width: 80px;
 	height: auto;
-//	border: solid 2px #4e9ba3;
-//	border-radius: 50%;
-//	vertical-align: top;
 	text-align: center;
 }
 
